@@ -1,5 +1,4 @@
 # Module5-Part2-bitsom_ba_2511666
-# Module5-Part2-bitsom_ba_2511666
 Computer Vision Problem Formulation and CNN Prototype
 Assignment Summary & Notes
 WHAT THIS ASSIGNMENT IS ABOUT
