@@ -78,6 +78,68 @@ For our defect detection task, a CNN can learn that a "scratch" is
 a thin elongated mark regardless of where it appears on the surface.
 A regular network would need to memorize every possible position.
 --------------------------------------------------------------
+============================================================
+TASK 7: BUSINESS USE CASE MAPPING
+============================================================
+==============================================================
+REAL-WORLD APPLICATION: MANUFACTURING - Automated Quality Control
+==============================================================
+
+DOMAIN: Manufacturing
+
+PROBLEM IN THE REAL WORLD:
+In factories that produce metal parts, electronic components,
+painted surfaces, or glass panels, every product must be checked
+for surface defects before it ships to customers. Right now,
+human inspectors do this manually by looking at each item on the
+assembly line. This is slow, tiring, and mistakes happen —
+especially after long shifts when inspectors get fatigued.
+
+HOW OUR CNN SOLUTION APPLIES:
+Our model classifies product surface images into 4 categories:
+- "normal"  -> product is defect-free, passes inspection
+- "scratch" -> surface has scratch marks, needs rework/polishing
+- "dent"    -> physical dent detected, reject or send for repair
+- "stain"   -> surface contamination found, needs cleaning
+
+A camera mounted above the conveyor belt captures an image of
+each product. The CNN model processes the image in milliseconds
+and classifies it. If a defect is detected, the product is
+automatically diverted to a separate line for repair.
+
+REAL-WORLD COMPANIES DOING THIS:
+- Tesla: Inspects car body panels for dents and paint scratches
+- Samsung: Checks display screens for dead pixels and stains
+- Foxconn: Inspects iPhone casings for surface defects
+- Steel mills: Check metal sheets for rolling defects
+
+BUSINESS BENEFITS:
+1. SPEED: Can inspect 100+ items per minute (humans do 10-15)
+2. CONSISTENCY: Same quality standard 24/7, no fatigue
+3. COST SAVINGS: Fewer defective products reach customers
+4. DATA: Track which defect types are increasing to fix root causes
+5. SCALABILITY: One system can replace multiple inspection stations
+
+IMPACT NUMBERS:
+- Reduces inspection labor costs by 60-80%
+- Cuts customer returns due to defects by 40-50%
+- Increases production line speed by 20-30%
+- Achieves 95%+ detection accuracy (vs ~85% for tired humans)
+
+WHY CNN IS THE RIGHT APPROACH:
+- CNNs excel at recognizing visual patterns (scratches = lines,
+  dents = circular marks, stains = color patches)
+- They work regardless of where the defect appears on the surface
+- They can be retrained when new defect types emerge
+- They process images in real-time (< 100ms per image)
+
+CONCLUSION:
+This is a direct application of our project. The same CNN
+architecture we built can be deployed in any manufacturing
+plant where visual quality inspection is needed. It acts as
+an automated quality gate that never gets tired, never misses
+a shift, and improves over time as more data is collected.
+==============================================================
 
 
 Computer Vision Problem Formulation and CNN Prototype
